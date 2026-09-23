@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* 3 x 3 Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* Individual squares */
+.square {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border: 2px solid black;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.square:hover {
+  background: #e8e8e8;
+}
+
+/* Reset button */
+#reset {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background: #333;
+}
